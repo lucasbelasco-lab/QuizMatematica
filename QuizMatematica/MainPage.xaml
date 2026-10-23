@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="QuizMatematica.MainPage"
+    Title="Quiz de Matemática"
+    BackgroundColor="#F2F5F9">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="20">
+
+          
+            <Label
+                Text="QUIZ DE MATEMÁTICA"
+                FontSize="27"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                TextColor="#19376D" />
+
+            <Label
+                Text="Matemática básica"
+                FontSize="22"
+                HorizontalTextAlignment="Center"
+                TextColor="#405675" />
+
+            <Label
+                Text="Teste seus conhecimentos de adição, subtração, multiplicação e divisão."
+                FontSize="17"
+                HorizontalTextAlignment="Center"
+                TextColor="#333333" />
+
+            <BoxView
+                HeightRequest="2"
+                Color="#C8D5E8" />
+
+            <Label
+                Text="Como funciona?"
+                FontSize="21"
+                FontAttributes="Bold"
+                TextColor="#19376D" />
+
+            <Label
+                Text="O quiz possui 8 perguntas, cada uma com quatro alternativas, de A a D. Escolha apenas uma resposta. Depois de responder, você saberá se acertou ou errou."
+                FontSize="16"
+                TextColor="#333333" />
+
+            <Label
+                Text="Pontuação"
+                FontSize="21"
+                FontAttributes="Bold"
+                TextColor="#19376D" />
+
+            <Label
+                Text="Cada resposta correta vale 10 pontos. Respostas incorretas não somam pontos. A pontuação máxima é de 80 pontos."
+                FontSize="16"
+                TextColor="#333333" />
+
+            <Button
+                Text="Começar o quiz"
+                FontSize="19"
+                FontAttributes="Bold"
+                HeightRequest="55"
+                CornerRadius="12"
+                BackgroundColor="#19376D"
+                TextColor="White"
+                Clicked="OnClicked" />
+
+            <Label
+                Text="Boa sorte!"
+                FontSize="15"
+                HorizontalTextAlignment="Center"
+                TextColor="#68778D" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

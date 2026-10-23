@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="QuizMatematica.QuintaQpage"
+    Title="Pergunta 5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="18">
+
+            <Label Text="Pergunta 5 de 8"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#19376D" />
+
+            <Label Text="ADIÇÃO"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#405675" />
+
+            <BoxView HeightRequest="2"
+                     Color="#C8D5E8" />
+
+            <Label Text="Quanto é 125 + 75?"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#19376D" />
+
+            <RadioButton x:Name="RespostaA"
+                         Content="A) 175"
+                         GroupName="Pergunta5"
+                         TextColor="#333333" />
+
+            <RadioButton x:Name="RespostaB"
+                         Content="B) 190"
+                         GroupName="Pergunta5"
+                         TextColor="#333333" />
+
+            <RadioButton x:Name="RespostaC"
+                         Content="C) 200"
+                         GroupName="Pergunta5"
+                         TextColor="#333333" />
+
+            <RadioButton x:Name="RespostaD"
+                         Content="D) 210"
+                         GroupName="Pergunta5"
+                         TextColor="#333333" />
+
+            <BoxView HeightRequest="1"
+                     Color="#C8D5E8" />
+
+            <Label x:Name="lblPontuacao"
+                   Text="Pontuação: 0"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#405675" />
+
+            <Button Text="Responder e avançar"
+                    FontSize="17"
+                    FontAttributes="Bold"
+                    HeightRequest="55"
+                    CornerRadius="12"
+                    BackgroundColor="#19376D"
+                    TextColor="White"
+                    Clicked="OnClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
